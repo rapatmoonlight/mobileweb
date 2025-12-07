@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำสถานที่</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: #ffeef7;
+            font-family: "Fredoka", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(255, 150, 200, 0.3);
+            width: 350px;
+            border: 3px solid #ffb4d2;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            color: #ff77b7;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: #ff6aa5;
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #ffc4dd;
+            background: #fff8fc;
+            font-size: 14px;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #ff8dc7;
+            background: #ffffff;
+            box-shadow: 0 0 8px rgba(255, 170, 210, 0.5);
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ff8dc7;
+            border: none;
+            border-radius: 15px;
+            margin-top: 15px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 16px;
+            box-shadow: 0px 4px 10px rgba(255, 140, 180, 0.3);
+        }
+
+        button:hover {
+            background: #ff75b7;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>แนะนำสถานที่ 🌸</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="1ab8a880-1c5a-4ac3-87b1-ae2b577d1fa7">
+
+            <label>ชื่อสถานที่</label>
+            <input type="text" name="place_name" required>
+
+            <label>รายละเอียดสถานที่</label>
+            <textarea name="place_detail" rows="4" required></textarea>
+
+            <label>URL ของภาพ</label>
+            <input type="url" name="image_url" required>
+
+            <label>ชื่อผู้ส่ง</label>
+            <input type="text" name="sender_name">
+
+            <button type="submit">ส่งข้อมูล 💌</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

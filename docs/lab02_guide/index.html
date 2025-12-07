@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงานของ นางสาวรภัสฐิดา รอดวงศ์
+    </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #A73B24;
+            font-family: "Kanit", sans-serif;
+
+        }
+
+        header {
+            margin-bottom: 5%;
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        menu {
+            padding: 0.5%;
+        }
+
+        canvas {
+            background: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .kku-footer {
+            background-color: #A73B24;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+
+        .kku-footer h3 {
+            margin: 0 0 10px;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+
+        .kku-footer p {
+            margin: 5px 0;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .intro {
+            background-image: url(pic/Group\ 2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 70vh;
+        }
+
+        .top {
+            text-align: center;
+            -webkit-text-stroke: 2px black;
+            font-size: 70px;
+            color: #A73B24;
+        }
+
+        .con1 h1 {
+            text-align: center;
+            -webkit-text-stroke: 2px black;
+            font-size: 80px;
+            color: #A73B24;
+        }
+
+        .con1 p {
+            font-size: 20px;
+        }
+
+        .content {
+            font-size: 20px;
+            text-align: center;
+            max-width: 1000px;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .plan1 {
+            display: flex;
+            background-color: white;
+            padding: 5%;
+            gap: 80px;
+        }
+
+        .plan2 {
+            display: flex;
+            background-color: white;
+            padding: 5%;
+            padding-top: 0;
+            gap: 80px;
+        }
+
+        .plan3 {
+            background-image: url(pic/ศูนย์อาหารและบริการ-1-คอมเพล็กซ์-น.ส.จุฑารัตน์-สายสกุล-5-1024x768\ 1.png);
+            padding: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .plan3 h1 {
+            color: white;
+            font-size: 150px;
+            text-align: center;
+        }
+
+        .plan4 {
+            display: flex;
+            background-color: white;
+            padding: 5%;
+            gap: 80px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .plan5 {
+            padding: 50px;
+        }
+
+        .plan5 h1 {
+            color: white;
+            -webkit-text-stroke: 2px black;
+            font-size: 80px;
+            text-align: center;
+        }
+
+        .de1,
+        .de2 {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 40px;
+            gap: 40px;
+            border-radius: 20px;
+            margin: 60px auto;
+            max-width: 1200px;
+        }
+
+        .de1 img,
+        .de2 img {
+            width: 40%;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .de1 p,
+        .de2 p {
+            width: 60%;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .de3 {
+            display: flex;
+            background-color: white;
+            padding: 5%;
+            gap: 80px;
+        }
+
+        .dede h1 {
+            -webkit-text-stroke: 2px black;
+            font-size: 100px;
+            color: #A73B24;
+        }
+
+        .plan7 {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            padding: 5%;
+            padding-top: 0;
+            gap: 80px;
+        }
+
+        @media (max-width: 1024px) {
+
+            .top h1,
+            .con1 h1,
+            .plan3 h1,
+            .plan5 h1,
+            .dede h1 {
+                font-size: 50px;
+                -webkit-text-stroke: 1px black;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center
+            }
+
+
+            .plan1,
+            .plan2,
+            .plan4,
+            .de1,
+            .de2,
+            .de3,
+            .plan7 {
+                flex-direction: column;
+                gap: 30px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .plan1 img,
+            .plan2 img,
+            .plan4 img,
+            .de1 img,
+            .de2 img,
+            .de3 img,
+            .plan7 img {
+                width: 100%;
+            }
+
+            .top h1 {
+                font-size: 50px;
+            }
+
+            .content {
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            .plan3 h1 {
+                font-size: 70px;
+            }
+
+            .plan5 h1 {
+                font-size: 50px;
+            }
+
+            .dede h1 {
+                font-size: 60px;
+            }
+
+            .de1,
+            .de2 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .de1 img,
+            .de2 img {
+                width: 100%;
+            }
+
+            .de1 p,
+            .de2 p {
+                width: 100%;
+                font-size: 15px;
+            }
+
+            .plan5 h1 {
+                font-size: 50px;
+                -webkit-text-stroke: 1px black;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center
+            }
+
+            .top h1 {
+                font-size: 32px;
+            }
+
+            .plan3 h1 {
+                font-size: 50px;
+            }
+
+            .content {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <menu>
+            <canvas id="kkuLogo" width="100" height="100"></canvas>
+        </menu>
+        <img src="pic/Group 1.png" alt="img" width="100%">
+    </header>
+
+    <div class="intro">
+        <div class="top">
+            <h1>Introduction</h1>
+        </div>
+        <div class="content">
+            <p>What is a KKU Plan?</p>
+            <br><br>
+            KKU Plan is a website designed to help students, visitors, and newcomers explore Khon Kaen University (KKU)
+            more easily. It serves as a friendly guide that introduces various important places across the campus in a
+            well-organized and visually accessible way.
+
+            The site typically includes information about key landmarks such as academic buildings, libraries,
+            cafeterias, dormitories, sports facilities, parks, and other useful locations that students often look for.
+            Each place usually comes with descriptions, photos, and sometimes directions or tips, helping users
+            understand what each location offers and how to get there.
+
+        </div>
+
+
+    </div>
+
+    <div class="plan1">
+        <img src="pic/clean-empty-library-hall.jpg" alt="" width="40%">
+        <div class="con1">
+            <h1>Library KKU</h1>
+            <p>The Khon Kaen University Library, often referred to as the KKU Central Library, is one of the most
+                important learning hubs on campus. It provides a wide range of academic resources, including physical
+                books, digital databases, research journals, and multimedia materials that support students from every
+                faculty. The building is designed to offer a calm, welcoming atmosphere with multiple reading zones,
+                computer areas, group-work rooms, and quiet study floors, making it suitable for both individual and
+                collaborative learning. Its modern facilities help students access information comfortably and
+                efficiently.
+            </p>
+
+        </div>
+    </div>
+    <div class="plan2">
+        <div class="con1">
+            <p>Beyond being a place for reading, the KKU Library also serves as a center for academic development and
+                student support. It regularly organizes workshops on research skills, reference management, academic
+                writing, and database usage. Students can also use services like book borrowing, online catalog search,
+                printing, scanning, and study room reservations. With its combination of resources, technology, and
+                supportive services, the library plays a vital role in creating a rich and engaging learning environment
+                for everyone at Khon Kaen University.
+            </p>
+            <br><br><br>
+            <p>The KKU Library is also a social and cultural space where students can connect, recharge, and take breaks
+                between classes. Many areas inside the building are designed to be comfortable and relaxing, with soft
+                seating, air-conditioned study corners, and open spaces where students can gather casually. The library
+                often hosts exhibitions, student activities, and academic showcases that highlight creativity and
+                research across the university. With its blend of study-friendly facilities and community-centered
+                activities, the KKU Library has become a place where students not only learn, but also feel a sense of
+                belonging within the KKU campus.</p>
+
+        </div>
+        <img src="pic/high-angle-students-learning-library.jpg" alt="" width="40%">
+    </div>
+
+    <div class="plan3">
+        <h1>Complex KKU</h1>
+    </div>
+
+    <div class="plan4">
+        <img src="pic/food.jpg" alt="" width="30%">
+        <p>The KKU Complex is a large multi-purpose center located at the heart of Khon Kaen University, designed to
+            serve as a convenient spot for students, staff, and visitors. It combines shopping, dining, and essential
+            daily services in one place, making it one of the busiest and most practical areas on campus. Inside the
+            complex, you can find various restaurants, cafés, convenience stores, stationery shops, and small retail
+            outlets that provide everything from snacks and school supplies to everyday necessities. Its central
+            location makes it a popular meeting point for students throughout the day.
+            <br><br>
+            Beyond basic services, the KKU Complex also supports student life through several facilities that help make
+            campus living easier. Many people visit the complex for banking services, mobile service centers, and
+            photocopy or printing shops, especially during busy academic periods. The area surrounding the complex is
+            lively and active, with open spaces where students relax, socialize, or wait for class. Because it gathers
+            so many essential services in one place, the KKU Complex plays a key role in keeping daily campus life
+            smooth, convenient, and enjoyable for the entire KKU community.
+        </p>
+    </div>
+
+    <div class="plan5">
+        <h1>50th Anniversary Stadium of KKU</h1>
+        <div class="de1">
+            <img src="pic/50th_Anniversary_Stadium_of_Khon_Kaen_University.jpg" alt="" width="30%">
+            <p>The 50th Anniversary Stadium of Khon Kaen University is one of the university’s largest and most iconic
+                sports facilities, built to commemorate KKU’s 50 years of establishment. The stadium features a spacious
+                running track, a well-maintained football field, and seating areas that can accommodate large numbers of
+                spectators during competitions and university events. Its open-air design allows for natural lighting
+                and ventilation, making it a comfortable place for both athletes and visitors. Throughout the day,
+                you’ll often see students jogging, training, or simply relaxing around the stadium.</p>
+        </div>
+        <div class="de2">
+            <p>Beyond serving as a sports venue, the stadium also plays an important role in hosting major university
+                ceremonies, athletic tournaments, and community events. It acts as a gathering place where students come
+                together for sports days, fitness activities, and even large-scale celebrations. The wide surrounding
+                area provides space for group workouts, marching band practices, and recreational exercise, contributing
+                to an energetic and lively atmosphere. As a landmark that symbolizes KKU’s growth and spirit, the 50th
+                Anniversary Stadium is both a functional facility and a meaningful part of the university’s identity.
+            </p>
+            <img src="pic/สนามกีฬา-50-ปี-มข-2-1024x773.jpg" alt="" width="30%">
+        </div>
+    </div>
+
+    <div class="plan6">
+        <div class="de3">
+            <div class="dede">
+                <h1>Srinagarind<br>Hospital</h1>
+                <br><br>
+                <p> Srinagarind Hospital, located within Khon Kaen University’s Faculty of Medicine, is one of the most
+                    advanced and well-known medical centers in Northeast Thailand. It serves as the main teaching
+                    hospital for medical students, nurses, and other health science programs, providing them with
+                    hands-on clinical experience in a real healthcare environment. The hospital is equipped with modern
+                    medical technology and a wide range of specialized departments, allowing it to deliver high-quality
+                    treatment and care to patients from Khon Kaen and nearby provinces.</p>
+            </div>
+            <div class="dede2">
+                <p>The hospital functions as a regional referral center, meaning patients with complex or severe medical
+                    conditions from other hospitals are often transferred here for advanced diagnosis and treatment. It
+                    houses specialized units such as the cancer center, trauma center, cardiovascular clinics, and
+                    advanced surgery departments. Because of its comprehensive services, Srinagarind Hospital plays a
+                    crucial role in improving public health in the entire northeastern region.
+
+                    <br><br>
+                    <img src="pic/2018_11_15_181119_0010.jpg" alt="" width="80%">
+            </div>
+        </div>
+        <div class="de4">
+
+        </div>
+    </div>
+
+    <div class="plan7">
+        <img src="pic/Srinagarind_Hospital,_Khon_Kaen_University_02.jpg" alt="" width="20%">
+        <p>In addition to medical care, the hospital is heavily involved in research and innovation. Doctors and
+            researchers from the Faculty of Medicine frequently conduct studies that contribute to Thailand’s medical
+            advancements, such as new treatment approaches, public health solutions, and disease prevention strategies.
+            These research activities help ensure that the hospital remains a leader in modern medicine, offering
+            patients the most updated and effective care possible.
+            <br><br><br>
+            Beyond its clinical and academic roles, Srinagarind Hospital is also designed to support patients and
+            families during challenging times. The campus includes waiting areas, food stalls, convenience stores, and
+            green spaces to make long hospital visits more manageable. Many volunteers and staff members work to create
+            a warm, supportive atmosphere, helping patients feel more comfortable and cared for. Altogether, Srinagarind
+            Hospital stands as a center of healing, learning, and community support within Khon Kaen University.
+        </p>
+        </p>
+    </div>
+
+    <footer class="kku-footer">
+        <div class="footer-content">
+            <h3>นักศึกษามหาวิทยาลัยขอนแก่น</h3>
+            <p>พัฒนาโดยนักศึกษามหาวิทยาลัยขอนแก่น เพื่อการศึกษาและการเรียนรู้</p>
+            <p>673380505-4 รภัสฐิดา รอดวงศ์ IT</p>
+            <p>© 2025 Khon Kaen University Student Project</p>
+        </div>
+    </footer>
+
+    <script>
+        const c = document.getElementById("kkuLogo");
+        const ctx = c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(50, 50, 37.5, 0, Math.PI * 2);
+        ctx.fillStyle = "#8B4A24";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(50, 50, 30, 0, Math.PI * 2);
+        ctx.fillStyle = "#ffffff";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(50, 20);
+        ctx.lineTo(57.5, 37.5);
+        ctx.lineTo(54, 37.5);
+        ctx.lineTo(62.5, 60);
+        ctx.lineTo(37.5, 60);
+        ctx.lineTo(46, 37.5);
+        ctx.lineTo(42.5, 37.5);
+        ctx.closePath();
+        ctx.fillStyle = "#D29B6A";
+        ctx.fill();
+
+        ctx.font = "bold 9px Arial";
+        ctx.fillStyle = "#8B4A24";
+        ctx.textAlign = "center";
+        ctx.fillText("KKU", 50, 75);
+    </script>
+</body>
+
+</html>
