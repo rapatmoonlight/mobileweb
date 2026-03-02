@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Lab09 - Arm Workout App</title>
+
+<style>
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+header {
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.section {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  border-left: 6px solid #4e73df;
+  padding-left: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.video-container {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Arm Workout Application</h1>
+  <p>รหัสนักศึกษา: 673380505-4</p>
+  <p>ชื่อ-นามสกุล: นางสาวรภัสฐิดา รอดวงศ์</p>
+</header>
+
+<div class="section">
+  <h2>📱 ตัวอย่างหน้าจอบน Android</h2>
+  <div class="image-grid">
+    <div>
+      <h3>1. หน้าเริ่มต้น</h3>
+      <img src="img/start.png" alt="Start Screen">
+    </div>
+
+    <div>
+      <h3>2. ขณะกำลังนับรอบ</h3>
+      <img src="img/counting.png" alt="Counting Screen">
+    </div>
+
+    <div>
+      <h3>3. หน้าแสดงสถิติ</h3>
+      <img src="img/result.png" alt="Result Screen">
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🎥 วิดีโอสาธิตการใช้งาน (ประมาณ 1 นาที)</h2>
+  <div class="video-container">
+    <video width="70%" controls>
+      <source src="video/demo.mp4" type="video/mp4">
+      เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+    </video>
+  </div>
+</div>
+
+<div class="section">
+  <h2>📋 รายละเอียดการทำงานของแอป</h2>
+  <ul>
+    <li>เมื่อกดปุ่ม Start จะมีเสียงแนะนำขั้นตอนการออกกำลังกาย (TTS)</li>
+    <li>ผู้ใช้เริ่มจากแขนแนบลำตัว และยกโทรศัพท์ขึ้นแนวตั้งจนสุดแขน</li>
+    <li>ระบบตรวจจับการเคลื่อนไหวจาก Motion Sensor</li>
+    <li>ทุกครั้งที่นับรอบ:
+      <ul>
+        <li>แสดงตัวเลขบนหน้าจอ</li>
+        <li>พูดเลขรอบที่ทำได้</li>
+        <li>มีการสั่นตอบกลับ</li>
+      </ul>
+    </li>
+    <li>ตรวจสอบความถูกต้อง:
+      <ul>
+        <li>ช่วงการเคลื่อนไหว (Range of Motion)</li>
+        <li>ความเร็ว (Tempo)</li>
+        <li>แนวการเคลื่อนที่</li>
+      </ul>
+    </li>
+    <li>แสดงสถิติเมื่อกด Stop</li>
+  </ul>
+</div>
+
+<footer>
+  Lab09 - Mobile Application Development
+</footer>
+
+</body>
+</html>
